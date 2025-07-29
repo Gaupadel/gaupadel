@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GauPadel</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      flex: 1 1 100px;
+    }
+    .logo img {
+      max-width: 80px;
+      border-radius: 50%;
+    }
+    .menu {
+      flex: 1 1 200px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .menu a {
+      background: white;
+      color: black;
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .title {
+      flex: 1 1 100%;
+      margin: 40px 0 20px;
+    }
+    .title h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .title h2 {
+      font-size: 1.2em;
+      margin: 0;
+      color: white;
+    }
+    .social {
+      flex: 1 1 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      margin-top: 30px;
+    }
+    .social a img {
+      width: 24px;
+      height: 24px;
+    }
+
+    @media (max-width: 600px) {
+      .menu {
+        width: 100%;
+        align-items: center;
+      }
+      .social {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="URL_DEL_LOGO" alt="Logo GauPadel">
+    </div>
+    <div class="menu">
+      <a href="#">NOTICIAS</a>
+      <a href="#">PATROCINADORES</a>
+      <a href="#">JUNTA</a>
+      <a href="#">CONTACTO</a>
+      <a href="#">TORNEOS</a>
+    </div>
+    <div class="title">
+      <h1><span style="color: white;">Gau</span><span style="color: #aaa;">Padel</span></h1>
+      <h2>VITORIA-GASTEIZ</h2>
+    </div>
+    <div class="social">
+      <a href="mailto:correo@ejemplo.com"><img src="https://img.icons8.com/ios-filled/24/ffffff/email.png" alt="Email" /></a>
+      <a href="https://instagram.com/gaupadel"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" /></a>
+    </div>
+  </div>
+</body>
+</html>
