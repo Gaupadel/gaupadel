@@ -137,6 +137,73 @@
         justify-content: center;
       }
     }
+    <style>
+  /* CONTENEDOR PRINCIPAL */
+  .contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 4rem 5%;
+    flex-wrap: wrap;
+    min-height: 70vh;
+  }
+
+  .logo-nombre {
+    flex: 1;
+  }
+
+  .logo-nombre img {
+    height: 80px;
+    margin-bottom: 2rem;
+  }
+
+  .botonera {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    flex: 1;
+  }
+
+  .botonera a {
+    display: block;
+    width: 200px;
+    padding: 0.75rem 1rem;
+    background-color: white;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+  }
+
+  .botonera a:last-child {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+  }
+
+  .botonera a:hover {
+    background-color: #f0c040;
+    color: black;
+    border-color: #f0c040;
+  }
+
+  /* RESPONSIVE: Botones a la derecha en móvil */
+  @media (max-width: 600px) {
+    .contenido {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 2rem;
+    }
+
+    .botonera {
+      align-items: flex-end;
+    }
+  }
+</style>
   </style>
 </head>
 <body>
