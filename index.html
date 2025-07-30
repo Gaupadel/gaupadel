@@ -30,18 +30,21 @@
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 4rem 5%;
+      padding: 2rem;
+      gap: 2rem;
       flex-wrap: wrap;
       min-height: 70vh;
     }
 
     .logo-nombre {
       flex: 1;
+      min-width: 200px;
     }
 
     .logo-nombre img {
-      height: 80px;
-      margin-bottom: 2rem;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
     }
 
     .botonera {
@@ -50,6 +53,7 @@
       align-items: flex-end;
       gap: 1rem;
       flex: 1;
+      min-width: 200px;
     }
 
     .botonera a {
@@ -82,11 +86,21 @@
       .contenido {
         flex-direction: column;
         align-items: stretch;
+        padding: 1rem;
         gap: 2rem;
       }
 
       .botonera {
         align-items: flex-end;
+      }
+
+      .botonera a {
+        width: 100%;
+        max-width: 300px;
+      }
+
+      .logo-nombre img {
+        max-width: 100%;
       }
     }
 
